@@ -203,3 +203,48 @@ footer ul li a {
     padding: 20px;
 }
 
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+    .header {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        width: 100%;
+    }
+    nav ul {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+    .banner, .vantage {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 5%;
+    }
+    .banner img, .vantage img {
+        order: -1;
+        max-width: 100%;
+    }
+    .banner .text, .vantage .text {
+        max-width: 100%;
+    }
+    .promo {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+    .promo img {
+        width: 100%;
+    }
+    footer {
+        width: 100%;
+    }
+    footer ul {
+        flex-direction: column;
+    }
+}
+
+
+
