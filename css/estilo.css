@@ -11,6 +11,7 @@ body {
     background-color: #000;
     color: #fff;
     
+    
 }
 
 header {
@@ -22,6 +23,29 @@ header {
     width: 1920px;
     height: 80px;
 
+}
+
+.btn1{padding: 15px 30px;
+    border: 2px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s, color 0,3s;
+    font-size: 1.1em;
+    background:#000;
+    align-self: flex-end;
+    border-radius: 10px;
+
+}
+
+.traco{
+    width: 1920px;
+    background-color: #404040;
+    border: none;
+    height: 1px;
+}
+
+hr{
+    align-items: center;
 }
 
 nav ul {
@@ -47,9 +71,10 @@ nav ul li a {
     transition: background-color 0.3s, color 0,3s;
     font-size: 1.1em;
     background:#000;
-    
-
+    align-self: flex-end;
+    border-radius: 10px;
 }
+
 h1{
     font-size: 3em;
     margin-bottom: 60px;
@@ -76,8 +101,20 @@ p{
 
 .banner {
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
     padding: 80px 100px;
+    width: 1276px;
+    height: 366px;
+    
+}
+.img1{
+    width: 850px;
+    height: 366px;
+}
+.banner-content{
+    width: 365px;
+    height: 230px;    
 }
 
 .banner .text {
@@ -86,16 +123,21 @@ p{
     padding-right: 50px;
 }
 
-.banner-text h1{
+h1{
     font-size: 3em;
     margin-bottom: 25px;
     font-weight: bold;
+    flex-direction: column;
+    align-self: flex-start;
+    
+
 }
 
-.banner-text p{
+p{
     font-size:1.1em;
     line-height: 1.7;
     margin-bottom: 35px;
+    
 }
 
 .banner img {
@@ -111,11 +153,15 @@ p{
 .vantage {
     display: flex;
     align-items: center;
-    padding: 149px;
+    
+    position: relative;
+    width: 1244px;
+    height: 364px;
 }
 
-.vantage img {
-    max-width: 600px;
+.img2{
+    max-width: 562px;
+    height: 364px;
     margin-right: 149px;
 }
 
@@ -126,32 +172,23 @@ p{
 }
 
 .promo {
-    width: 100vw;
-    height: 400px; 
+    width: 1296px;
+    height: 366px;
     background: linear-gradient(to right, #91282f, #330002); 
     display: flex;
     align-items: center;
     padding: 20px;
     color: white;
     position: relative;
-    border-radius: 5px
+    border-radius: 5px;
+    flex-direction: row-reverse;
     
 }
- .promo::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 100%;
-    background: url(../images/rectangle\ 92.png) no-repeat center;
-    background-size: contain;
-}
-
-.promo img {
-    max-width: 500px;
-    margin-top:20px
-    
+ 
+.img3{
+    width: 533px;
+    height: 280px;
+   
 }
 
 footer {
