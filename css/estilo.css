@@ -46,6 +46,7 @@ nav ul li a {
     color: #fff;
     transition: background-color 0.3s, color 0,3s;
     font-size: 1.1em;
+    background:#000;
     
 
 }
