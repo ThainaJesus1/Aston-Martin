@@ -1,0 +1,204 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif}
+
+body {
+    background-color: #000;
+    color: #fff;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 323px;
+    background-color: #000;
+    width: 1920px;
+    height: 80px;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+}
+
+.btn {
+    padding: 15px 30px;
+    border: 2px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s, color 0,3s;
+    font-size: 1.1em;
+    
+
+}
+h1{
+    font-size: 3em;
+    margin-bottom: 60px;
+    font-weight: bold;
+
+}
+
+p{
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    align-self: flex-end;
+    
+
+
+}
+ 
+
+.btn:hover {
+    background-color: #fff;
+    color: #000;
+    
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    padding: 80px 100px;
+}
+
+.banner .text {
+    flex: 1; 
+    max-width: 45%;
+    padding-right: 50px;
+}
+
+.banner-text h1{
+    font-size: 3em;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.banner-text p{
+    font-size:1.1em;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+.banner-image{
+    flex:1;
+    text-align: right;
+}
+
+.vantage {
+    display: flex;
+    align-items: center;
+    padding: 149px;
+}
+
+.vantage img {
+    max-width: 600px;
+    margin-right: 149px;
+}
+
+.vantage .text{
+    flex:1;
+    padding-right: 149px;
+    margin-right: 149px;
+}
+
+.promo {
+    width: 100vw;
+    height: 400px; 
+    background: linear-gradient(to right, #91282f, #330002); 
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    position: relative;
+    border-radius: 5px
+    
+}
+ .promo::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: url(../images/rectangle\ 92.png) no-repeat center;
+    background-size: contain;
+}
+
+.promo img {
+    max-width: 500px;
+    margin-top:20px
+    
+}
+
+footer {
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+footer img {
+    max-width: 120px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+footer p {
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 10px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+.footer-text {
+    font-size: 14px;
+    color: #000;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding: 20px;
+}
+
