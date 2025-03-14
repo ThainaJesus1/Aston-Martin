@@ -1,52 +1,49 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif}
+    font-family: Arial, Helvetica, sans-serif
+}
+
+html {
+    width: 100%;
+}
 
 body {
     background-color: #000;
     color: #fff;
-    
-    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container{
-    margin: 0px 318px 8px 323px;
-    width: 1920px;
     height: 80px;
     display: flex;
     flex-direction: column;
-    
-
 }
 
-
-
 .menu{
-    width: 1278.73px;
+    width: 1296px;
     height: 40px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .main {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px 0;
     background-color: #000;
-    width: 100%;
     height: 80px;
-    
-
 }
 
-.btn1{padding: 15px 30px;
+.btn1{
+    padding: 15px 30px;
     border: 2px solid #fff;
     text-decoration: none;
     color: #fff;
@@ -55,11 +52,9 @@ body {
     background:#000;
     align-self: flex-end;
     border-radius: 10px;
-
 }
 
 .traco{
-    width: 1920px;
     background-color: #404040;
     border: none;
     height: 1px;
@@ -94,30 +89,24 @@ nav ul li a {
     background:#000;
     align-self: flex-end;
     border-radius: 10px;
+    display: inline-block;
 }
 
 h1{
     font-size: 3em;
     margin-bottom: 60px;
     font-weight: bold;
-
 }
 
 p{
     font-size: 16px;
     line-height: 1.6;
-    margin-bottom: 30px;
     align-self: flex-end;
-    
-
-
 }
- 
 
 .btn:hover {
     background-color: #fff;
     color: #000;
-    
 }
 
 .banner {
@@ -127,14 +116,13 @@ p{
     padding: 80px 100px;
     width: 1276px;
     height: 366px;
-    margin:232px 323px 0px 321px;
-
-    
 }
+
 .img1{
     width: 850px;
     height: 366px;
 }
+
 .banner-content{
     width: 365px;
     height: 230px;    
@@ -152,15 +140,6 @@ h1{
     font-weight: bold;
     flex-direction: column;
     align-self: flex-start;
-    
-
-}
-
-p{
-    font-size:1.1em;
-    line-height: 1.7;
-    margin-bottom: 35px;
-    
 }
 
 .banner img {
@@ -176,7 +155,6 @@ p{
 .vantage {
     display: flex;
     align-items: center;
-    margin: 0 351px 0 325px;
     position: relative;
     width: 1244px;
     height: 364px;
@@ -196,23 +174,30 @@ p{
 
 .promo {
     width: 1296px;
-    height: 366px;
     background: linear-gradient(to right, #91282f, #330002); 
     display: flex;
     align-items: center;
-    padding: 20px;
-    color: white;
-    position: relative;
     border-radius: 5px;
     flex-direction: row-reverse;
-    margin: 0 304px 0 320px
-    
+    justify-content: space-between;
+    margin-bottom: 55px;
+}
+
+.promo-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 62px;
+    height: 207px;
+}
+
+.promo h2, p {
+    width: 270px;
 }
  
 .img3{
+    object-fit: contain;
     width: 533px;
-    height: 280px;
-   
 }
 
 footer {
@@ -224,11 +209,12 @@ footer {
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
 }
+
 .footer-container{
     max-width: 1200px;
     margin:0 auto;
-    
 }
+
 footer img {
     max-width: 120px;
     display: block;
@@ -237,10 +223,16 @@ footer img {
 
 footer p {
     font-size: 14px;
+}
+
+.politica-a {
+    margin-right: 25px;
+}
+
+footer a {
+    text-decoration: none;
     color: #000;
-    max-width: 800px;
-    margin: 0 auto 10px;
-    line-height: 1.6;
+    font-size: 14px;
 }
 
 footer ul {
@@ -252,6 +244,11 @@ footer ul {
     margin-top: 10px;
 }
 
+.footer-texto{
+    justify-content: space-between;
+    display: flex;
+}
+
 footer ul li a {
     text-decoration: none;
     color: #000;
@@ -261,12 +258,12 @@ footer ul li a {
 .footer-text {
     font-size: 14px;
     color: #000;
-    max-width: 800px;
-    margin: 0 auto 10px;
+    margin: 0 auto 64px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     line-height: 1.6;
-    
+    text-align: center;
+    width: 100%;
 }
 
 @media (max-width: 768px) {
