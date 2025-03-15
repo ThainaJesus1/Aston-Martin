@@ -19,6 +19,7 @@ body {
 }
 
 .container{
+    width: 100%;
     height: 80px;
     display: flex;
     flex-direction: column;
@@ -40,10 +41,11 @@ body {
     padding: 20px 0;
     background-color: #000;
     height: 80px;
+    border-bottom: 1px solid #404040;
 }
 
 .btn1{
-    padding: 15px 30px;
+    padding: 15px 20px;
     border: 2px solid #fff;
     text-decoration: none;
     color: #fff;
@@ -52,12 +54,6 @@ body {
     background:#000;
     align-self: flex-end;
     border-radius: 10px;
-}
-
-.traco{
-    background-color: #404040;
-    border: none;
-    height: 1px;
 }
 
 hr{
@@ -98,12 +94,6 @@ h1{
     font-weight: bold;
 }
 
-p{
-    font-size: 16px;
-    line-height: 1.6;
-    align-self: flex-end;
-}
-
 .btn:hover {
     background-color: #fff;
     color: #000;
@@ -113,28 +103,35 @@ p{
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    padding: 80px 100px;
-    width: 1276px;
-    height: 366px;
+    justify-content: space-between;
+    width: 1296px;
+    margin-top: 152px;
 }
 
 .img1{
-    width: 850px;
-    height: 366px;
+    object-fit: contain;
+    width: 750px;
 }
 
-.banner-content{
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     width: 365px;
     height: 230px;    
 }
 
-.banner .text {
-    flex: 1; 
-    max-width: 45%;
-    padding-right: 50px;
+.h2-spam {
+    font-size: 48px;
+    margin-right: 10px;
+    font-style: normal;
 }
 
-h1{
+.banner-title {
+    font-style: italic;
+}
+
+h1 {
     font-size: 3em;
     margin-bottom: 25px;
     font-weight: bold;
@@ -147,7 +144,7 @@ h1{
     height: auto;
 }
 
-.banner-image{
+.banner-image {
     flex:1;
     text-align: right;
 }
@@ -156,14 +153,25 @@ h1{
     display: flex;
     align-items: center;
     position: relative;
-    width: 1244px;
-    height: 364px;
+    width: 1296px;
+    /* height: 364px; */
+}
+
+.vantage-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 182px;
+}
+
+.vantage-p {
+    width: 450px;
 }
 
 .img2{
+    object-fit: contain;
+    margin-right: 46px;
     max-width: 562px;
-    height: 364px;
-    margin-right: 149px;
 }
 
 .vantage .text{
@@ -177,7 +185,7 @@ h1{
     background: linear-gradient(to right, #91282f, #330002); 
     display: flex;
     align-items: center;
-    border-radius: 5px;
+    border-radius: 12px;
     flex-direction: row-reverse;
     justify-content: space-between;
     margin-bottom: 55px;
@@ -193,6 +201,12 @@ h1{
 
 .promo h2, p {
     width: 270px;
+}
+
+.btn-promo a {
+    display: flex;
+    justify-content: center;
+    width: 217.43px;
 }
  
 .img3{
@@ -223,6 +237,7 @@ footer img {
 
 footer p {
     font-size: 14px;
+    width: auto;
 }
 
 .politica-a {
@@ -245,6 +260,7 @@ footer ul {
 }
 
 .footer-texto{
+    margin-top: 21px;
     justify-content: space-between;
     display: flex;
 }
@@ -266,48 +282,95 @@ footer ul li a {
     width: 100%;
 }
 
-@media (max-width: 768px) {
-    .container {
-        width: 95%;
-        padding: 10px;
-    }
-    .header {
-        flex-direction: column;
-        text-align: center;
-        height: auto;
-        width: 100%;
-    }
-    nav ul {
-        flex-direction: column;
-        padding-top: 10px;
-    }
-    .banner, .vantage {
-        flex-direction: column;
-        text-align: center;
-        padding: 40px 5%;
-    }
-    .banner img, .vantage img {
-        order: -1;
-        max-width: 100%;
-    }
-    .banner .text, .vantage .text {
-        max-width: 100%;
-    }
-    .promo {
-        flex-direction: column;
-        height: auto;
-        text-align: center;
-    }
-    .promo img {
-        width: 100%;
-    }
-    footer {
-        width: 100%;
-    }
-    footer ul {
-        flex-direction: column;
+@media screen and (max-width: 1330px) {
+    .banner, .vantage, .promo, .menu, .footer-container {
+        width: 1100px;
     }
 }
 
+@media screen and (max-width: 1130px) {
+    .vantage, .promo, .menu, .footer-container, .banner {
+        width: 900px;
+    }
 
+    .img1 {
+        width: 600px;
+    }
 
+    .img2 {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .vantage, .promo, .menu, .footer-container, .banner {
+        width: 700px;
+    }
+
+    .banner {
+        margin-top: 80px;
+    }
+
+    .vantage-p {
+        width: 250px;
+    }
+
+    .promo {
+        height: 240px;
+    }
+
+    .img1 {
+        width: 400px;
+    }
+
+    .img3 {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .banner, .vantage, .promo, .footer-container {
+        width: 500px;
+        flex-direction: column;
+    }
+
+    .vantage {
+        margin-bottom: 50px;
+    }
+
+    .img2 {
+        margin: 0;
+    }
+
+    .promo {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .promo-content {
+        margin: 20px 0;
+    }
+
+    .bta-copyright {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-texto {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .politica-a {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 585px) {
+    .menu    {
+        display: flex;
+        flex-direction: column;
+    }
+}
