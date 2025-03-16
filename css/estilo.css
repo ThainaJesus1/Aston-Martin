@@ -105,7 +105,7 @@ h1 {
     align-items: center;
     justify-content: space-between;
     width: 1296px;
-    margin-top: 152px;
+   
 }
 
 .img1 {
@@ -155,12 +155,19 @@ h1 {
 .vantage {
     display: flex;
     align-items: center;
-    position: relative;
+    justify-content: space-between;
     width: 1296px;
-    
+    margin:50px;
     
 }
-
+.container-vantage{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    
+    width: 100%;
+    text-align: left;
+}
 .vantage-content {
     display: flex;
     flex-direction: column;
@@ -177,6 +184,7 @@ h1 {
     object-fit: contain;
     margin-right: 46px;
     max-width: 562px;
+    border-radius: 10px;
     
     
 }
@@ -293,164 +301,146 @@ footer ul li a {
 }
 
 
-@media screen and (max-width: 1330px) {
-    .banner, .vantage, .promo, .menu, .footer-container {
-        width: 1100px;
-    }
-}
-
-@media screen and (max-width: 1130px) {
-    .vantage, .promo, .menu, .footer-container, .banner {
-        width: 900px;
-    }
-
-    .img1 {
-        width: 600px;
-    }
-
-    .img2 {
-        width: 400px;
-    }
-}
-
-@media screen and (max-width: 950px) {
-    .vantage, .promo, .menu, .footer-container, .banner {
-        width: 700px;
-    }
-
-    .banner {
-        margin-top: 80px;
-    }
-
-    .vantage-p {
-        width: 250px;
-    }
-
-    .promo {
-        height: 240px;
-    }
-
-    .img1 {
-        width: 400px;
-    }
-
-    .img3 {
-        width: 350px;
-    }
-}
-
 @media screen and (max-width: 750px) {
+    .menu {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    
+
     .banner, .vantage, .promo, .footer-container {
         width: 500px;
         flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .vantage-content, .banner-content, .promo-content {
+        width: 100%;
+        text-align: center;
     }
 
-    .vantage {
-        margin-bottom: 50px;
-    }
-
-    .img2 {
-        margin: 0;
-    }
-
-    .promo {
-        height: auto;
-        flex-direction: column;
-    }
-
-    .promo-content {
-        margin: 20px 0;
-    }
-
-    .bta-copyright {
+    .container-vantage {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 630px) {
+    .menu {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .footer-texto {
+   
+
+    .banner, .vantage, .promo {
+        width: 450px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .img1, .img2, .img3 {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .container-vantage {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 515px) {
+    .menu {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .politica-a {
-        margin: 0;
+    
+
+    .banner, .vantage, .promo {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .banner-content, .vantage-content, .promo-content {
+        width: 100%;
+        padding: 0 15px;
+    }
+    
+    .img1, .img2, .img3 {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .container-vantage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
     }
 }
 
-@media screen and (max-width: 585px) {
-    /* Menu - Centraliza na versão responsiva */
+@media screen and (max-width: 400px) {
     .menu {
         width: 100%;
-        padding: 0 10px;
-        
-    }
-
-    nav ul {
-        display: flex;
-        justify-content: space-evenly;
-        width: 100%;
-        justify-content: space-between;
-        
-    }
-
-
-    .btn1 {
-        margin-top: 5px;
-    }
-
-    /* Main */
-    .main {
-        padding: 20px 10px;
-    }
-
-    .banner {
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
 
-    .img1 {
-        object-fit: contain;
-        width: 100%;
-        max-width: 750px;
-    }
-
-    /* Vantage */
-    .vantage {
-        flex-direction: column;
-    }
-
-
-    .vantage-content {
-        width: 100%;
-        height: auto;
-    }
-
-    .img2 {
-        object-fit: contain;
-        max-width: 100%;
-    }
-
-    /* Promo */
    
-    .promo {
+
+    .banner, .vantage, .promo {
+        width: 100%;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
+        text-align: center;
+    }
+    
+    .banner-content, .vantage-content, .promo-content {
+        width: 100%;
+        padding: 0 10px;
+    }
+    
+    .img1, .img2, .img3 {
+        width: 100%;
+        max-width: 300px;
     }
 
-    .img3 {
-        object-fit: contain;
-        max-width: 100%;
+    .container-vantage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
     }
-
-    /* Footer */
-    footer {
-        padding: 30px 15px;
-    }
-
-    footer img {
-        max-width: 100px;
+    .btn1{
+        padding: 0 10px;
     }
 }
