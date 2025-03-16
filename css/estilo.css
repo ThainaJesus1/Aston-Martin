@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 html {
@@ -18,14 +18,14 @@ body {
     align-items: center;
 }
 
-.container{
+.container {
     width: 100%;
     height: 80px;
     display: flex;
     flex-direction: column;
 }
 
-.menu{
+.menu {
     width: 1296px;
     height: 40px;
     margin: 0 auto;
@@ -44,19 +44,19 @@ body {
     border-bottom: 1px solid #404040;
 }
 
-.btn1{
+.btn1 {
     padding: 15px 20px;
     border: 2px solid #fff;
     text-decoration: none;
     color: #fff;
     transition: background-color 0.3s, color 0,3s;
     font-size: 1.1em;
-    background:#000;
+    background: #000;
     align-self: flex-end;
     border-radius: 10px;
 }
 
-hr{
+hr {
     align-items: center;
 }
 
@@ -82,13 +82,13 @@ nav ul li a {
     color: #fff;
     transition: background-color 0.3s, color 0,3s;
     font-size: 1.1em;
-    background:#000;
+    background: #000;
     align-self: flex-end;
     border-radius: 10px;
     display: inline-block;
 }
 
-h1{
+h1 {
     font-size: 3em;
     margin-bottom: 60px;
     font-weight: bold;
@@ -108,7 +108,7 @@ h1{
     margin-top: 152px;
 }
 
-.img1{
+.img1 {
     object-fit: contain;
     width: 750px;
 }
@@ -118,7 +118,7 @@ h1{
     flex-direction: column;
     justify-content: space-evenly;
     width: 365px;
-    height: 230px;    
+    height: 230px;
 }
 
 .h2-spam {
@@ -142,10 +142,13 @@ h1 {
 .banner img {
     max-width: 100%;
     height: auto;
+    border-radius: 10px;
+    object-fit: contain;
+    
 }
 
 .banner-image {
-    flex:1;
+    flex: 1;
     text-align: right;
 }
 
@@ -154,7 +157,8 @@ h1 {
     align-items: center;
     position: relative;
     width: 1296px;
-    /* height: 364px; */
+    
+    
 }
 
 .vantage-content {
@@ -162,33 +166,38 @@ h1 {
     flex-direction: column;
     justify-content: space-around;
     height: 182px;
+    
 }
 
 .vantage-p {
     width: 450px;
 }
 
-.img2{
+.img2 {
     object-fit: contain;
     margin-right: 46px;
     max-width: 562px;
+    
+    
 }
 
-.vantage .text{
-    flex:1;
+.vantage .text {
+    flex: 1;
     padding-right: 149px;
     margin-right: 149px;
+    
 }
 
 .promo {
     width: 1296px;
-    background: linear-gradient(to right, #91282f, #330002); 
+    background: linear-gradient(to right, #91282f, #330002);
     display: flex;
     align-items: center;
     border-radius: 12px;
     flex-direction: row-reverse;
     justify-content: space-between;
     margin-bottom: 55px;
+    margin-top:64px;
 }
 
 .promo-content {
@@ -199,7 +208,8 @@ h1 {
     height: 207px;
 }
 
-.promo h2, p {
+.promo h2,
+p {
     width: 270px;
 }
 
@@ -208,8 +218,8 @@ h1 {
     justify-content: center;
     width: 217.43px;
 }
- 
-.img3{
+
+.img3 {
     object-fit: contain;
     width: 533px;
 }
@@ -224,9 +234,9 @@ footer {
     border-bottom: 1px solid #ccc;
 }
 
-.footer-container{
+.footer-container {
     max-width: 1200px;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 footer img {
@@ -259,7 +269,7 @@ footer ul {
     margin-top: 10px;
 }
 
-.footer-texto{
+.footer-texto {
     margin-top: 21px;
     justify-content: space-between;
     display: flex;
@@ -281,6 +291,7 @@ footer ul li a {
     text-align: center;
     width: 100%;
 }
+
 
 @media screen and (max-width: 1330px) {
     .banner, .vantage, .promo, .menu, .footer-container {
@@ -369,8 +380,77 @@ footer ul li a {
 }
 
 @media screen and (max-width: 585px) {
-    .menu    {
+    /* Menu - Centraliza na versão responsiva */
+    .menu {
+        width: 100%;
+        padding: 0 10px;
+        
+    }
+
+    nav ul {
         display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        justify-content: space-between;
+        
+    }
+
+
+    .btn1 {
+        margin-top: 5px;
+    }
+
+    /* Main */
+    .main {
+        padding: 20px 10px;
+    }
+
+    .banner {
         flex-direction: column;
+        align-items: center;
+    }
+
+    .img1 {
+        object-fit: contain;
+        width: 100%;
+        max-width: 750px;
+    }
+
+    /* Vantage */
+    .vantage {
+        flex-direction: column;
+    }
+
+
+    .vantage-content {
+        width: 100%;
+        height: auto;
+    }
+
+    .img2 {
+        object-fit: contain;
+        max-width: 100%;
+    }
+
+    /* Promo */
+   
+    .promo {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img3 {
+        object-fit: contain;
+        max-width: 100%;
+    }
+
+    /* Footer */
+    footer {
+        padding: 30px 15px;
+    }
+
+    footer img {
+        max-width: 100px;
     }
 }
