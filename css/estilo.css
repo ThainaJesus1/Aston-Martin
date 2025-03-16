@@ -301,146 +301,201 @@ footer ul li a {
 }
 
 
-@media screen and (max-width: 750px) {
-    .menu {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
 
-    
-
-    .banner, .vantage, .promo, .footer-container {
-        width: 500px;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .vantage-content, .banner-content, .promo-content {
-        width: 100%;
-        text-align: center;
-    }
-
-    .container-vantage {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        width: 100%;
-    }
-    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-@media screen and (max-width: 630px) {
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+.container {
+    width: 100%;
+}
+
+
+.menu {
+    width: 100%;
+    max-width: 1296px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+/* Banner */
+.banner {
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.img1 {
+    width: 100%;
+    max-width: 750px;
+}
+
+
+.vantage {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.img2 {
+    width: 100%;
+    max-width: 562px;
+}
+
+/* Promoção */
+.promo {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.img3 {
+    width: 100%;
+    max-width: 533px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-texto {
+    flex-direction: column;
+    gap: 10px;
+}
+
+/*responsivo*/
+
+@media (max-width: 1024px) {
     .menu {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .btn1 {
+        padding: 10px 15px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .banner, 
+    .vantage, 
+    .promo {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    
+    .banner img, 
+    .vantage img, 
+    .promo img {
+        width: 100%;
+        max-width: 750px; 
+        height: auto; 
+        margin-bottom: 20px;
+    }
+
+    
+    .banner-content, 
+    .vantage-content, 
+    .promo-content {
         width: 100%;
         display: flex;
-        justify-content: center;
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
 
    
-
-    .banner, .vantage, .promo {
-        width: 450px;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+    .btn-banner, 
+    .btn-vantage, 
+    .btn-promo {
+        margin-top: 20px;
     }
+
     
-    .img1, .img2, .img3 {
-        width: 100%;
-        max-width: 400px;
-    }
-
     .container-vantage {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        width: 100%;
-    }
-    
-}
-
-@media screen and (max-width: 515px) {
-    .menu {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    
-
-    .banner, .vantage, .promo {
-        width: 100%;
-        flex-direction: column;
+        flex-direction: column; 
         align-items: center;
         text-align: center;
-    }
-    
-    .banner-content, .vantage-content, .promo-content {
-        width: 100%;
-        padding: 0 15px;
-    }
-    
-    .img1, .img2, .img3 {
-        width: 100%;
-        max-width: 350px;
+        width: 100%; 
+        
     }
 
-    .container-vantage {
+    .img2 {
+        width: 100%;
+        max-width: 750px; 
+        margin-bottom: 20px;
+        margin-left: 46px;
+        
+    }
+
+
+    .vantage-content {
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        text-align: center;
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .menu {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
         text-align: center;
     }
 
-   
-
-    .banner, .vantage, .promo {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+    .vantage-p {
+        margin-bottom: 20px; 
     }
-    
-    .banner-content, .vantage-content, .promo-content {
-        width: 100%;
-        padding: 0 10px;
-    }
-    
-    .img1, .img2, .img3 {
-        width: 100%;
-        max-width: 300px;
-    }
-
-    .container-vantage {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        width: 100%;
-    }
-    .btn1{
-        padding: 0 10px;
+    .btn-vantage {
+        margin-top: 15px; 
     }
 }
